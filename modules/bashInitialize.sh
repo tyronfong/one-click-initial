@@ -8,12 +8,11 @@ function bashInitialize_init()
 (
     echo "bash env initialize..."
 
-    ALIAS=("alias ..='cd ..'"
-           "alias ...='cd ../../'"
-           "alias ....='cd ../../../'"
-           "alias .....='cd ../../../../'")
-
-    if ! cat ~/.bashrc | grep -Eqi "alias ..="; then
-        echo "alias.. not exist!"
+    if ! cat ~/.bashrc | grep -Eqi "alias \.\.="; then
+        echo "alias ..='cd ..'" >> ~/.bashrc
+	echo "apend alias ..='cd ..' to .bashrc file"
     fi
+
+    echo "Bash env initialized successfully, pls re-login the bash to active."
+    source ~/.bashrc
 )
