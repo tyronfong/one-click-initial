@@ -60,6 +60,12 @@ function gitInit_init()
         apt-get -y install git
     fi
     
+    git config credential.helper store
+
+    read -p "Please input git user.email: " email
+    read -p "Please input git user.name: " name
+    git config --global user.email $email
+    git config --global user.name $name
 
     echo "Git client initialized successfully!"
 )
