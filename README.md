@@ -1,7 +1,7 @@
 ## one-click-initial
 **one-click-initial** is A environment initialize script, 
 which allow user create initial script easily.
-You can use your crated scripts to initialize your new box env, 
+You can use your created scripts to initialize your new box env, 
 rather than doing the duplicate work.
 
 ## How to add new initial module
