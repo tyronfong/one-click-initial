@@ -4,7 +4,7 @@
 export `basename ${BASH_SOURCE[0]} .sh`_desc="Initialize 7z."
 
 # init function (should start with "filename_")
-function nodejsInit_init()
+function 7zInit_init()
 (
     function check_sys(){
  	    local checkType=$1
